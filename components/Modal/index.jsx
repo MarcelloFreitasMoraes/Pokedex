@@ -2,7 +2,6 @@ import React from 'react'
 import * as S from './styles'
 
 export default function Modal({ nome, tipo, hp, ataque, defesa, ataqueEspecial, defesaEspecial, velocidade, imagem, setOpenModal = { setOpenModal } }) {
-    console.log(nome);
     return (
         <S.Container >
             {nome &&
@@ -22,14 +21,14 @@ export default function Modal({ nome, tipo, hp, ataque, defesa, ataqueEspecial, 
                     <S.Image src={imagem}></S.Image>
                 </div>
             ) : (
-                <S.Pergunta>
-                    <S.Quem>Quem<br /> é esse<br /> pokemon</S.Quem>
-                    <S.Interrogacao>?</S.Interrogacao>
-                </S.Pergunta>
+                <S.Question>
+                    <S.who>Quem<br /> é esse<br /> pokemon</S.who>
+                    <S.interrogation>?</S.interrogation>
+                </S.Question>
             )}
-            <S.Botao>
-                <S.X onClick={() => setOpenModal(false)}>X</S.X>
-            </S.Botao>
+            <S.Bot>
+                <S.Modality onClick={() => setOpenModal(false)}>X</S.Modality>
+            </S.Bot>
         </S.Container >
     )
 }

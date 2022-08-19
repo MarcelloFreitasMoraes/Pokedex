@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import * as S from './style.ts'
+import * as S from './styles'
 import axios from "axios";
 
 export default function Card({ data }) {

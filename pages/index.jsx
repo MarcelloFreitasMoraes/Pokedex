@@ -1,15 +1,18 @@
 import React, { useState } from "react";
+import * as S from '../styles/Styles'
 import styles from '../styles/Home.module.css';
 import axios from "axios"
 import Modal from '../components/Modal';
 import { Container } from "../container";
+import { ButtonAll } from "../components/ButtonAll/ButtonAll";
+import { ButtonClick } from "../components/ButtonClick/ButtonClick";
 
 export default function Home() {
   const [resposta, setResposta] = useState("")
   const [pokemon, setPokemon] = useState("")
   const [openModal, setOpenModal] = useState(false)
   console.log("resposta", resposta);
-  const pokemonAbilities = (choice) => {
+  const pokemoLendas = (choice) => {
     axios
       .get(`https://pokeapi.co/api/v2/pokemon/${choice}`)
       .then((response) => {
@@ -20,17 +23,18 @@ export default function Home() {
         alert("Quem é esse pokemon?")
       });
   }
+  console.log(pokemon,'pokemon');
   return (
     <Container>
-    <div className={styles.container}>
-      {/* <Head>
+    <main className={styles.main}>
+      <div>
         <title>Pokedex</title>
-      </Head> */}
+      </div>
 
-      <main className={styles.main} >
+      <S.Main >
         <img src='https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ff896529894633.573b59857ec23.png' />
 
-        {openModal &&
+        {openModal && resposta &&
           <Modal
             nome={resposta?.name}
             tipo={resposta.types && resposta?.types[0]?.type?.name}
@@ -44,13 +48,15 @@ export default function Home() {
             setOpenModal={setOpenModal} />
         }
 
-        <div>
-          <input onChange={(e) => setPokemon(e.target.value)} placeholder="Pokemon" />
-          {/* <button className={styles.entre} onClick={() => pokemonAbilities(pokemon)} > Entre</button>
-          <button className={styles.button}><a href="/Pokemon">Todos Pokemons</a></button> */}
-        </div>
-      </main>
-    </div >
+        <S.BoxButton>
+          <S.Input onChange={(e) => setPokemon(e.target.value)} placeholder="Pokemon" />
+          <ButtonClick 
+          text={'Entre'}
+          action={() => pokemoLendas(pokemon)} />
+          <ButtonAll  action={() => window.location.href="/Pokemon"} text={'All Pokemons '}/>
+        </S.BoxButton>
+      </S.Main>
+    </main >
     </Container>
   )
 }

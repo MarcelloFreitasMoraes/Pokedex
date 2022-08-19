@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 
 export const Container = styled.section`
-    background-image: url(https://cdn-icons-png.flaticon.com/512/188/188918.png);
+    background-image: url(https://cdn.icon-icons.com/icons2/851/PNG/512/Master_Ball_icon-icons.com_67545.png);
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     flex-direction: row;
     position: fixed;
-    top: 200px;
+    top: 60px;
     left: 30%;
     width: 700px;
     height: 600px;
@@ -29,14 +29,14 @@ export const Container = styled.section`
     }
 `
 
-export const Botao = styled.div`
+export const Bot = styled.div`
     position: absolute;
     top: 5px;
     right: 20px;
     cursor: pointer;
 `
 
-export const X = styled.p`
+export const Modality = styled.p`
     width: 50px;
     height: 50px;
     display: flex;
@@ -59,7 +59,7 @@ export const Image = styled.img`
         height: 350px;
     }
 `
-export const Pergunta = styled.p`
+export const Question = styled.p`
     display: flex;
     flex-direction: row;
     margin-top: 100px;
@@ -71,16 +71,16 @@ export const Pergunta = styled.p`
     }
 `
 
-export const Quem = styled.p`
+export const who = styled.p`
     font-family: 'Pokemon Solid', sans-serif;
-    font-size: 80px;
+    font-size: 70px;
     margin: 0;
     letter-spacing: 4px;
     color: #ffcc01;
     text-shadow: 10px 0  2px black;
 `
 
-export const Interrogacao = styled.p`
+export const interrogation = styled.p`
     font-family: 'Pokemon Solid', sans-serif;
     font-size: 350px;
     margin:0;
