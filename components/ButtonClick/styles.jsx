@@ -21,7 +21,7 @@ export const ButtonAction = styled.button`
   padding: 5px 13px 5px 25px;
   border-radius: 40px;
   border: 1px solid rgba(206, 222, 231, 1);
-  background: red;
+  background: #3560AC;
   width: 350px;
   height: 80px;
   font-family: 'Pokemon Solid', sans-serif;

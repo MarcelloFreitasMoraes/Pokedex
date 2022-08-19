@@ -8,14 +8,14 @@ export const Container = styled.section`
     display: flex;
     flex-direction: row;
     position: fixed;
-    top: 60px;
+    top: 150px;
     left: 30%;
     width: 700px;
     height: 600px;
     color: black;
     align-items: center;
     justify-content: space-around;
-    z-index: 10;
+    z-index: 9999;
     @media(max-width: 600px){
         width:90%;
         height: 80%;

@@ -3,6 +3,7 @@ import axios from "axios"
 import Modal from '../../components/Modal';
 import Card from '../../components/Card'
 import styles from '../../styles/Home.module.css'
+import { Container } from '../../container';
 export default function AllPokemons() {
 
     const [data, setData] = useState();
@@ -25,6 +26,7 @@ export default function AllPokemons() {
     }
 
     return (
+        <Container>
         <div>
             <div className={styles.modal}>
                 {openModal &&
@@ -56,7 +58,7 @@ export default function AllPokemons() {
                     )
                 })}
             </div>
-
         </div>
+        </Container>
     )
 }

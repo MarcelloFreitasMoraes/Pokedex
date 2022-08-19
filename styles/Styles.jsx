@@ -4,7 +4,7 @@ export const Content = styled.div`
 padding: 0 2rem;
 background-size: 100%;
 background-repeat: no-repeat;
-background-image: url('https://baixarpapeldeparede.com/web/wallpapers/wallpaper-hd-pokemon-13/1024x600.png');
+
 `
 export const Main = styled.div`
 display: flex;

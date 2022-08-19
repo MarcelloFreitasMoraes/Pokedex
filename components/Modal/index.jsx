@@ -1,8 +1,10 @@
 import React from 'react'
 import * as S from './styles'
+import { Container } from '../../container'
 
 export default function Modal({ nome, tipo, hp, ataque, defesa, ataqueEspecial, defesaEspecial, velocidade, imagem, setOpenModal = { setOpenModal } }) {
     return (
+        <Container>
         <S.Container >
             {nome &&
                 <S.Typography >
@@ -30,5 +32,6 @@ export default function Modal({ nome, tipo, hp, ataque, defesa, ataqueEspecial, 
                 <S.Modality onClick={() => setOpenModal(false)}>X</S.Modality>
             </S.Bot>
         </S.Container >
+        </Container>
     )
 }

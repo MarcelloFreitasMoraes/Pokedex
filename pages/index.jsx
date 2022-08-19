@@ -11,7 +11,7 @@ export default function Home() {
   const [resposta, setResposta] = useState("")
   const [pokemon, setPokemon] = useState("")
   const [openModal, setOpenModal] = useState(false)
-  console.log("resposta", resposta);
+  
   const pokemoLendas = (choice) => {
     axios
       .get(`https://pokeapi.co/api/v2/pokemon/${choice}`)
@@ -23,6 +23,7 @@ export default function Home() {
         alert("Quem é esse pokemon?")
       });
   }
+  console.log("resposta", resposta);
   console.log(pokemon,'pokemon');
   return (
     <Container>
@@ -32,7 +33,7 @@ export default function Home() {
       </div>
 
       <S.Main >
-        <img src='https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ff896529894633.573b59857ec23.png' />
+        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png' />
 
         {openModal && resposta &&
           <Modal
