@@ -12,6 +12,9 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 `
+export const Image = styled.img`
+
+`
 
   export const BoxButton = styled.div`
   display: flex;
