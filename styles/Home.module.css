@@ -1,0 +1,142 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+.container {
+  padding: 0 2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.voltar{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 10px rgb(49, 102, 177) solid;
+  background: #ffcc01;
+  font-family: 'Pokemon Solid', sans-serif;
+  font-size: large;
+  color: rgb(49, 102, 177);
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+
+.main div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main input{
+  width: 500px;
+  height: 30px;
+  margin: 50px;
+}
+
+.entre{
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: larger;
+  font-family: 'Pokemon Solid', sans-serif;
+  letter-spacing: 4px; 
+  text-transform: uppercase;
+  color: white;
+  background: red;
+  cursor: pointer;
+}
+
+.button{
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: larger;
+  font-family: 'Pokemon Solid', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: black;
+  background: white;
+}
+
+.page{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 85%;
+  margin: 0 auto;
+}
+.modal{
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px){
+  .container {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main img{
+    width: 350px;
+  }
+
+  .main input{
+    width: 300px;
+    height: 50px;
+    margin: 50px;
+  }
+
+  .entre{
+    width: 350px;
+    height: 80px;
+    border-radius: 20px;
+    font-size: larger;
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 4px; 
+    text-transform: uppercase;
+    color: white;
+    background: red;
+  }
+
+  .button{
+    width: 350px;
+    height: 80px;
+    border-radius: 20px;
+    font-size: larger;
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: black;
+    background: white;
+  }
+
+  .poster {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .poster img{
+    width: 350px;
+  }
+}
