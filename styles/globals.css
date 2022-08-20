@@ -4,6 +4,7 @@ body {
   margin: 0;
   background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/afc5df5a-136d-4c28-89b4-5b6eed27163a/de2mkqe-81c44ed2-2a06-4ed1-b003-e91546797bd5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FmYzVkZjVhLTEzNmQtNGMyOC04OWI0LTViNmVlZDI3MTYzYVwvZGUybWtxZS04MWM0NGVkMi0yYTA2LTRlZDEtYjAwMy1lOTE1NDY3OTdiZDUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fKQhrA5fnIRdxW7FIg6IgE9ltdWxJfxgX2WOX4sAI6I);
   background-repeat: no-repeat;
+  width: 1340px
 }
 @import url("http://fonts.cdnfonts.com/css/pokemon-solid");
 a {
