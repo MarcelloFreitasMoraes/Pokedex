@@ -3,8 +3,9 @@ import axios from "axios";
 import Modal from "../../components/Modal";
 import Card from "../../components/Card";
 import styles from "../../styles/Home.module.css";
-import * as S from "../../styles/Styles";
 import { Container } from "../../container";
+import Link from "next/link";
+
 export default function AllPokemons() {
   const [data, setData] = useState();
   const [openModal, setOpenModal] = useState(false);
@@ -26,7 +27,7 @@ export default function AllPokemons() {
 
   return (
     <Container>
-      <S.Global>
+      <div>
         <div className={styles.modal}>
           {openModal && (
             <Modal
@@ -47,12 +48,16 @@ export default function AllPokemons() {
           )}
         </div>
         <div className={styles.poster}>
-          <a className={styles.voltar} href="/">
+          <Link href="/">
+          <a className={styles.voltar} >
             voltar
           </a>
-          <a href="/">
+          </Link>
+          <Link href="/">
+          <a >
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" />
           </a>
+          </Link>
         </div>
 
         <div className={styles.page}>
@@ -64,7 +69,7 @@ export default function AllPokemons() {
             );
           })}
         </div>
-      </S.Global>
+      </div>
     </Container>
   );
 }

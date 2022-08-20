@@ -44,8 +44,3 @@ export const Poster = styled.div`
   justify-content: center;
   align-items: center;
 `;
-
-export const Global = styled.div`
-  width: 100%;
-  background-color: #ffffe0;
-`;

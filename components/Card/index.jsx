@@ -5,7 +5,7 @@ import axios from "axios";
 export default function Card({ data }) {
     const [poke, setPoke] = useState()
 
-    const infoAllPoke = (url) => {
+    const InfoAllPoke = (url) => {
         useEffect(() => {
             axios
                 .get(url)
@@ -17,7 +17,7 @@ export default function Card({ data }) {
         return poke
     }
 
-    const call = infoAllPoke(data)
+    const call = InfoAllPoke(data)
 
     const typePower = (Background) => {
         switch (Background) {
