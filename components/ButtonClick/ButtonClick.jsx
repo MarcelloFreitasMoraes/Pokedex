@@ -1,4 +1,4 @@
-import * as S from './styles'
+import * as S from '../../styles/styles.buttonclick'
 
 export const ButtonClick = ({ action, icon, text }) => {
 

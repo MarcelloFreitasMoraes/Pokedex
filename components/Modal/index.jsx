@@ -1,5 +1,5 @@
 import React from 'react'
-import * as S from './styles'
+import * as S from '../../styles/styles.modal'
 import { Container } from '../../container'
 
 export default function Modal({ nome, tipo, hp, ataque, defesa, ataqueEspecial, defesaEspecial, velocidade, imagem, setOpenModal = { setOpenModal } }) {

@@ -1,4 +1,4 @@
-import * as S from './styles'
+import * as S from '../../styles/styles.buttonall'
 
 export const ButtonAll = ({ action, icon, text }) => {
 

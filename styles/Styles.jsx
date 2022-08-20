@@ -1,29 +1,29 @@
 import styled from "styled-components";
 
 export const Content = styled.div`
-padding: 0 2rem;
-background-size: 100%;
-background-repeat: no-repeat;
-
-`
+  padding: 0 2rem;
+  background-size: 100%;
+  width: 100%;
+`;
 export const Main = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-`
-export const Image = styled.img`
-
-`
-
-  export const BoxButton = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;  
-  `
+  justify-content: center;
+  align-items: center;
+`;
+export const Image = styled.img`
+  width: 300px;
+  height: 200px;
+`;
+
+export const BoxButton = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 export const Input = styled.input`
-  width: 500px;
+  width: 300px;
   height: 50px;
   margin: 50px;
   padding-left: 20px;
@@ -37,11 +37,16 @@ export const Input = styled.input`
   :focus-visible {
     outline-color: rgba(37, 127, 164, 1);
     z-index: 1;
-  }    
-`
+  }
+`;
 export const Poster = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  `
+`;
+
+export const Global = styled.div`
+  width: 100%;
+  background-color: #ffffe0;
+`;

@@ -1,11 +1,13 @@
-@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
-
+@import url("http://fonts.cdnfonts.com/css/pokemon-solid");
 
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/afc5df5a-136d-4c28-89b4-5b6eed27163a/de2mkqe-81c44ed2-2a06-4ed1-b003-e91546797bd5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FmYzVkZjVhLTEzNmQtNGMyOC04OWI0LTViNmVlZDI3MTYzYVwvZGUybWtxZS04MWM0NGVkMi0yYTA2LTRlZDEtYjAwMy1lOTE1NDY3OTdiZDUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fKQhrA5fnIRdxW7FIg6IgE9ltdWxJfxgX2WOX4sAI6I);
+  background-repeat: no-repeat;
 }
 
 .poster {
@@ -15,7 +17,7 @@
   align-items: center;
 }
 
-.voltar{
+.voltar {
   width: 100px;
   height: 100px;
   display: flex;
@@ -24,57 +26,57 @@
   border-radius: 100%;
   border: 10px rgb(49, 102, 177) solid;
   background: #ffcc01;
-  font-family: 'Pokemon Solid', sans-serif;
+  font-family: "Pokemon Solid", sans-serif;
   font-size: large;
   color: rgb(49, 102, 177);
   cursor: pointer;
   letter-spacing: 1.5px;
 }
 
-.main div{
+.main div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.entre{
+.entre {
   width: 200px;
   height: 50px;
   border-radius: 20px;
   font-size: larger;
-  font-family: 'Pokemon Solid', sans-serif;
-  letter-spacing: 4px; 
+  font-family: "Pokemon Solid", sans-serif;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: white;
   background: red;
   cursor: pointer;
 }
 
-.button{
+.button {
   width: 200px;
   height: 50px;
   border-radius: 20px;
   font-size: larger;
-  font-family: 'Pokemon Solid', sans-serif;
+  font-family: "Pokemon Solid", sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: black;
   background: white;
 }
 
-.page{
+.page {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 85%;
   margin: 0 auto;
 }
-.modal{
+.modal {
   display: flex;
   justify-content: space-around;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   .container {
     height: 900px;
     display: flex;
@@ -82,35 +84,35 @@
     justify-content: center;
     align-items: center;
   }
-  
-  .main img{
+
+  .main img {
     width: 350px;
   }
 
-  .main input{
+  .main input {
     width: 300px;
     height: 50px;
     margin: 50px;
   }
 
-  .entre{
+  .entre {
     width: 350px;
     height: 80px;
     border-radius: 20px;
     font-size: larger;
-    font-family: 'Pokemon Solid', sans-serif;
-    letter-spacing: 4px; 
+    font-family: "Pokemon Solid", sans-serif;
+    letter-spacing: 4px;
     text-transform: uppercase;
     color: white;
     background: red;
   }
 
-  .button{
+  .button {
     width: 350px;
     height: 80px;
     border-radius: 20px;
     font-size: larger;
-    font-family: 'Pokemon Solid', sans-serif;
+    font-family: "Pokemon Solid", sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: black;
@@ -125,7 +127,7 @@
     align-items: center;
   }
 
-  .poster img{
+  .poster img {
     width: 350px;
   }
 }
