@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Content = styled.div`
   padding: 0 2rem;
-  background-size: 100%;
   width: 100%;
 `;
 export const Main = styled.div`
