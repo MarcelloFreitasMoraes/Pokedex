@@ -20,9 +20,14 @@ export const Name = styled.p`
   letter-spacing: 2px;
   border-radius: 5px;
   color: #ffcc01;
-  background: rgb(49, 102, 177);
+  background-color: rgb(54, 54, 54);
 `;
 
 export const Image = styled.img`
-  width: 150px;
+  background: linear-gradient( to bottom, rgba(214, 214, 214, 0.3), rgba(77, 77, 77, 0.1) );
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px 10px rgb(202 201 201 / 5%);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 `;

@@ -46,7 +46,9 @@ export default function Card({ data }) {
         <>
             <S.Card cor={typePower(call && call?.types && call?.types[0]?.type?.name)} >
                 <S.Name>{call?.name}</S.Name>
+                <div>
                 <S.Image src={call?.sprites.other.dream_world.front_default} />
+                </div>
             </S.Card>
 
         </>
