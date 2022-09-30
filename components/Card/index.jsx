@@ -40,14 +40,14 @@ export default function Card({ data }) {
             case 'ground': return '#9f6411';
             case 'fairy': return '#c0517a'
             default: '#98bbb7'
-        }
+        }        
     };
     return (
         <>
             <S.Card cor={typePower(call && call?.types && call?.types[0]?.type?.name)} >
                 <S.Name>{call?.name}</S.Name>
                 <S.WidImg>
-                <S.Image src={call?.sprites.other.dream_world.front_default} />
+                <S.Image src={call?.sprites.other["official-artwork"].front_default} />
                 </S.WidImg>
             </S.Card>
 
