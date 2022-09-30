@@ -3,7 +3,6 @@ import * as S from "../styles/Styles";
 import styles from "../styles/Home.module.css";
 import axios from "axios";
 import Modal from "../components/Modal";
-import { Container } from "../container";
 import { ButtonAll } from "../components/ButtonAll/ButtonAll";
 import { ButtonClick } from "../components/ButtonClick/ButtonClick";
 
@@ -24,12 +23,22 @@ export default function Home() {
       });
   };  
   return (
-    <Container>
+    <div className={styles.container}>
       <main className={styles.main}>
-        <S.Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" />
-        <div>
-          <title>Pokedex</title>
-        </div>
+        <div className={styles.title}>
+          <div className={styles.imglogs}>
+           <img
+      src="https://1000logos.net/wp-content/uploads/2017/05/Pokemon-Logo.png"
+      alt="Pokemon Logo"
+      className={styles.pokemonlogo}
+    />
+       <img
+        src="https://www.pngkey.com/png/full/144-1446994_pokeball-clipart-transparent-background-pokeball-png.png"
+        alt=""
+        className={styles.pokeball}
+       />
+       </div>
+       </div>
 
         <S.Main>
           {openModal && resposta && (
@@ -63,6 +72,6 @@ export default function Home() {
           </S.BoxButton>
         </S.Main>
       </main>
-    </Container>
+    </div>
   );
 }

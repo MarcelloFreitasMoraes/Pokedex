@@ -3,7 +3,6 @@ import axios from "axios";
 import Modal from "../../components/Modal";
 import Card from "../../components/Card";
 import styles from "../../styles/Home.module.css";
-import { Container } from "../../container";
 import Link from "next/link";
 
 export default function AllPokemons() {
@@ -26,8 +25,7 @@ export default function AllPokemons() {
   };
 
   return (
-    <Container>
-      <div>
+      <div className={styles.container}>
         <div className={styles.modal}>
           {openModal && (
             <Modal
@@ -52,13 +50,22 @@ export default function AllPokemons() {
           <a className={styles.voltar} >
             voltar
           </a>
-          </Link>
-          <Link href="/">
-          <a >
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" />
-          </a>
-          </Link>
+          </Link>          
         </div>
+  
+        <div className={styles.title}>
+           <img
+      src="https://1000logos.net/wp-content/uploads/2017/05/Pokemon-Logo.png"
+      alt="Pokemon Logo"
+      className={styles.pokemonlogo}
+    />
+       <img
+        src="https://www.pngkey.com/png/full/144-1446994_pokeball-clipart-transparent-background-pokeball-png.png"
+        alt=""
+        className={styles.pokeball}
+       />
+       <h1 className={styles.h1}>Pokedex</h1>
+       </div>
 
         <div className={styles.page}>
           {data?.results?.map((item, index) => {
@@ -70,6 +77,5 @@ export default function AllPokemons() {
           })}
         </div>
       </div>
-    </Container>
   );
 }

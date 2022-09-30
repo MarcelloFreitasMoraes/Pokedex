@@ -1,11 +1,10 @@
 import React from 'react'
 import * as S from '../../styles/styles.modal'
-import { Container } from '../../container'
 
 export default function Modal({ nome, tipo, hp, ataque, defesa, ataqueEspecial, defesaEspecial, velocidade, imagem, setOpenModal = { setOpenModal } }) {
     return (
-        <Container>
-        <S.Container >
+    <S.Container>
+        <S.Content >
             {nome &&
                 <S.Typography >
                     <p>Nome:{nome}</p>
@@ -31,7 +30,7 @@ export default function Modal({ nome, tipo, hp, ataque, defesa, ataqueEspecial, 
             <S.Bot>
                 <S.Modality onClick={() => setOpenModal(false)}>X</S.Modality>
             </S.Bot>
-        </S.Container >
-        </Container>
+        </S.Content >
+        </S.Container>
     )
 }

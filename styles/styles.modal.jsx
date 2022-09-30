@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const Container = styled.div`
+width: 1345px;
+margin: 0 auto;
+`
+export const Content = styled.section`
   background-image: url(https://cdn.icon-icons.com/icons2/851/PNG/512/Master_Ball_icon-icons.com_67545.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -51,8 +55,8 @@ export const Modality = styled.p`
 `;
 
 export const Image = styled.img`
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   @media (max-width: 600px) {
     width: 300px;
     height: 350px;

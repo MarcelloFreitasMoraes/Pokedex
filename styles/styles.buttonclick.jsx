@@ -29,6 +29,17 @@ export const ButtonAction = styled.button`
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #ffcc01;
+  @media only screen and (max-width: 600px) {
+       width: 350px;
+    height: 80px;
+    border-radius: 20px;
+    font-size: larger;
+    font-family: "Pokemon Solid", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+     color: #ffcc01;
+    background: #3560ac;
+    }
 `;
 export const Icon = styled.div`
   margin-right: 10px;
