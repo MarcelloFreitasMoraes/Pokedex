@@ -5,20 +5,19 @@ width: 1345px;
 margin: 0 auto;
 `
 export const Content = styled.section`
+  position: absolute;
   background-image: url(https://cdn.icon-icons.com/icons2/851/PNG/512/Master_Ball_icon-icons.com_67545.png);
   background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   flex-direction: row;
-  position: fixed;
-  top: 30px;
+  top: 230px;
   left: 30%;
   width: 700px;
   height: 600px;
   color: black;
   align-items: center;
-  justify-content: space-around;
-  z-index: 9999;
+  justify-content: space-around;  
+
   @media (max-width: 600px) {
     width: 90%;
     height: 80%;

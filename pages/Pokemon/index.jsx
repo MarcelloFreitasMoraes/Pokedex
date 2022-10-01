@@ -15,9 +15,9 @@ export default function AllPokemons() {
       .get("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0")
       .then((response) => setData(response.data));
   }, []);
-  const pokemonLegends = (choice) => {
+  const pokemonLegends = (id) => {
     axios
-      .get(`https://pokeapi.co/api/v2/pokemon/${choice}`)
+      .get(`https://pokeapi.co/api/v2/pokemon/${id}`)
       .then((response) => {
         setResposta(response.data);
         setOpenModal(true);

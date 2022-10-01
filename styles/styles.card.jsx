@@ -14,11 +14,11 @@ export const Card = styled.div`
   cursor: pointer;
      -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
-  :hover {
+  /* :hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     }
-    overflow: hidden;
+    overflow: hidden; */
 `;
 export const Name = styled.p`
   text-transform: uppercase;
