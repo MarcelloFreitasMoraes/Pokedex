@@ -5,8 +5,8 @@ width: 1345px;
 margin: 0 auto;
 `
 export const Content = styled.section`
-  position: absolute;
-  background-image: url(https://cdn.icon-icons.com/icons2/851/PNG/512/Master_Ball_icon-icons.com_67545.png);
+  position: fixed;
+  background-image: url('https://cdn.icon-icons.com/icons2/851/PNG/512/Master_Ball_icon-icons.com_67545.png');
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
